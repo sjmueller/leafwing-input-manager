@@ -149,7 +149,7 @@ pub fn update_action_state<A: Actionlike>(
             keycodes,
             scan_codes,
             mouse_buttons,
-            mouse_wheel: mouse_wheel.clone(),
+            mouse_wheel: Some(mouse_wheel.clone()),
             mouse_motion: mouse_motion.clone(),
             associated_gamepad: input_map.gamepad(),
         };
